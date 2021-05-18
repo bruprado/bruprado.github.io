@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar" id="topo">
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/menu.png"
+                            alt="ícone menu"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home</a>
+                        <a href="lesoes.html" class="dropdown-item">Lesões</a>
+                        <a href="duvidas.html" class="dropdown-item">Dúvidas Frequentes</a>
+                        <a href="cadastro.html" class="dropdown-item">Cadastre-se</a>
+                        <a href="contato.html" class="dropdown-item">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="sec-agendamento" class="row mb-5">
+                
+                <h2 class="text-center titulos col-12 mt-4">PRÉ CADASTRO</h2>
+                <p class="text-center col-12">Preencha os dados abaixo e faça um pré cadastro para futuras consultas.</p>
+                
+                <form class="form col-md-7" id="formulario-cadastro">
+                    <div class="form-group mt-3">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" class="form-control col-9" id="name" placeholder="Digite seu nome"
+                                name="name" required>
+                        <div class="invalid-feedback">Por favor preencha este campo.</div>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="idade">Idade:</label>
+                            <input type="date" class="form-control col-9" id="idade" placeholder="Digite seu e-mail"
+                                name="idade" required>
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Telefone:</label>
+                            <input type="tel" class="form-control col-9" id="tel"
+                                placeholder="Informe seu telefone com DDD e sem espaços." name="tel" required
+                                maxlength="11">
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control col-9" id="email" placeholder="Digite seu e-mail"
+                                name="email" required>
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" onblur="VerificaCPF()" class="form-control col-9" id="cpf" placeholder="Digite seu e-mail"
+                                name="cpf" required maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                            >
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Mensagem</label>
+                            <textarea class="form-control col-9" rows="5" id="comment"
+                                placeholder="Digite aqui seus sintomas" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+
+                    <aside class="col-md-5 mt-5">
+                        <h3 class="text-center col-12">LOCALIZAÇÃO</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.484618997485!2d-40.89077458486596!3d-3.919879545274659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794c92f56f8391d%3A0x318e9e74a072f77!2sR.%20Cel.%20Wenceslau%20Soares%20-%20Centro%2C%20Ibiapina%20-%20CE%2C%2062360-000!5e0!3m2!1spt-BR!2sbr!4v1621090826866!5m2!1spt-BR!2sbr"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </aside>
+            </section>
+
+            <!-- BOTÃO ÂNCORA -->
+            <div id="ancora">
+                <a href="#topo"><img src="../img/up-arrow.png" alt="ícone seta para cima" id="img-seta"></a>
+            </div>
+        </main>
+
+        <footer class="meu-footer row">
+            <div id="contatos-footer">
+                <h3>Contatos</h3>
+                <div id="tel-footer">
+                    <img src="../img/telephone.svg" alt="ícone telefone">
+                    <p>(88) 99801-4042</p>
+                </div>
+
+                <div id="email-footer">
+                    <img src="../img/envelope.svg" alt="ícone envelope">
+                    <p>matheusfreirecarv@gmail.com</p>
+                </div>
+
+                <div id="endereco-footer">
+                    <img src="../img/geo-alt.svg" alt="ícone localização">
+                    <p>Rua: Cel Wenceslau Soares, Centro, S/N. Ibiapina - CE.</p>
+                </div>
+            </div>
+
+            <div id="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/matheus.freirec/" target="_blank"><img src="../img/instagram.png"
+                        alt="ícone instagram"></a>
+                <a href="https://www.facebook.com/Matheus-Freire-113189996720479" target="_blank"><img
+                        src="../img/facebook.png" alt="ícone facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=5588998014042" target="_blank"><img
+                        src="../img/whatsapp.png" alt="ícone whatsapp"></a>
+            </div>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

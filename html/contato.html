@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar" id="topo">
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/menu.png"
+                            alt="ícone menu"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home</a>
+                        <a href="lesoes.html" class="dropdown-item">Lesões</a>
+                        <a href="duvidas.html" class="dropdown-item">Dúvidas Frequentes</a>
+                        <a href="cadastro.html" class="dropdown-item">Cadastre-se</a>
+                        <a href="contato.html" class="dropdown-item">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="sec-titulo-contato" class="mt-3 mb-5 row">
+                <h2 class="my-3 titulos col-12 text-center">CONTATO</h2>
+
+                    <img src="../img/teclando2 - edit.jpeg" alt="pessoa teclando no computador" width="70%"
+                        class="rounded img-fluid col-12">
+                    <p class="mt-3 text-center col-12">Preencha o formulário abaixo para entrar em contato.</p>
+
+                    <form class="form col-md-12 text-center" id="formulario">
+                        <div class="form-group mt-3 input-pagina-contato">
+                            <label for="name" class="label-nome-contato">Nome Completo:</label>
+                            <input type="text" class="form-control col-7" id="name" placeholder="Digite seu nome"
+                                name="name" required>
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group input-pagina-contato">
+                            <label for="tel" class="label-tel-contato">Telefone:</label>
+                            <input type="tel" class="form-control col-7" id="tel"
+                                placeholder="Digite o DDD, somente números e sem espaços." name="tel" required>
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group input-pagina-contato">
+                            <label for="email" class="label-email-contato">E-mail:</label>
+                            <input type="email" class="form-control col-7" id="email" placeholder="Digite seu e-mail"
+                                name="email" required>
+                            <div class="invalid-feedback">Por favor preencha este campo.</div>
+                        </div>
+
+                        <div class="form-group input-pagina-contato">
+                            <label for="comment" class="label-text-contato">Mensagem</label>
+                            <textarea class="form-control col-7" rows="5" id="comment" required
+                                placeholder="Digite sua mensagem"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                
+            </section>
+
+            <!-- BOTÃO ÂNCORA -->
+            <div id="ancora">
+                <a href="#topo"><img src="../img/up-arrow.png" alt="ícone seta para cima" id="img-seta"></a>
+            </div>
+        </main>
+
+        <footer class="meu-footer row">
+            <div id="contatos-footer">
+                <h3>Contatos</h3>
+                <div id="tel-footer">
+                    <img src="../img/telephone.svg" alt="ícone telefone">
+                    <p>(88) 99801-4042</p>
+                </div>
+
+                <div id="email-footer">
+                    <img src="../img/envelope.svg" alt="ícone envelope">
+                    <p>matheusfreirecarv@gmail.com</p>
+                </div>
+
+                <div id="endereco-footer">
+                    <img src="../img/geo-alt.svg" alt="ícone localização">
+                    <p>Rua: Cel Wenceslau Soares, Centro, S/N. Ibiapina - CE.</p>
+                </div>
+            </div>
+
+            <div id="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/matheus.freirec/" target="_blank"><img src="../img/instagram.png"
+                        alt="ícone instagram"></a>
+                <a href="https://www.facebook.com/Matheus-Freire-113189996720479" target="_blank"><img
+                        src="../img/facebook.png" alt="ícone facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=5588998014042" target="_blank"><img
+                        src="../img/whatsapp.png" alt="ícone whatsapp"></a>
+            </div>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
