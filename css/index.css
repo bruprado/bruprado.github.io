@@ -1,0 +1,215 @@
+@font-face {
+    font-family: venus;
+    src: url(venus\ rising\ rg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: greenwich;
+    src: url(FontsFree-Net-MintType-Greenwich-Light.ttf) format("truetype");
+}
+
+/* SEÇÃO PRINCIPAL COM LOGOTIPO E FOTO INDEX */
+#sec-principal, #sec-servicos, header, #sec-depoimentos {
+    background-color: #f6f6f6;
+}
+
+.img-logotipo {
+    margin-top: 20%;
+}
+
+/* SEÇÃO SECUNDÁRIA SOBRE MATHEUS INDEX */
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-top: 8%;
+}
+
+.div-sobre {
+    background-color: #FFE45C;
+    border-radius: 10%;
+}
+
+.paragrafo-sobre {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+#sec-sobre {
+    margin-top: 5%;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.titulos {
+    margin: 0 auto;
+}
+
+h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CAROUSEL DE DEPOIMENTOS */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/* FOOTER */
+.meu-footer {
+    background-color: #00406b;
+    color: white;
+    height: 172px;
+    position: relative;
+}
+
+#contatos-footer {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#tel-footer, #email-footer, #endereco-footer {
+    display: flex;
+}
+
+#tel-footer img {
+    margin-bottom: 15px;
+}
+
+#tel-footer p {
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+#email-footer img, #endereco-footer img {
+    margin-bottom: 15px;
+}
+
+#email-footer p, #endereco-footer p {
+    padding-left: 5px;
+}
+
+#redes-sociais {
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+#redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+/* SETA ÂNCORA */
+#img-seta {
+    position: fixed;
+    bottom: 170px;
+    right: 10px;
+}
+
+/* PÁGINA CONTATO */
+.input-pagina-contato input, .input-pagina-contato textarea {
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+.label-nome-contato {
+    margin-right: 46%;
+}
+
+.label-tel-contato {
+    margin-right: 51%;
+}
+
+.label-email-contato {
+    margin-right: 53%;
+}
+
+.label-text-contato {
+    margin-right: 50%;
+}
+
+.btn {
+    background-color: #00406b;
+}
+
+.btn:hover {
+    background-color: #F5C000;
+}
+
+/* PÁGINA DÚVIDAS FREQUENTES */
+.titulo-card-noticias {
+    color: #00406b;
+}
+
+.titulo-card-noticias:hover {
+    color: #F5C000;
+}
+
+.link-card-noticias:hover {
+    color: #F5C000;
+}
+
+#primeira-sec-duvidas, #segunda-sec-duvidas, #terceira-sec-duvidas, #quarta-sec-dicas, #quinta-sec-artigos, #sec-agendamento, #sec-titulo-contato, #sec-depoimentos, #sec-videos {
+    margin: 0 10%;
+}
+
+
+/* PÁGINA LESÕES */
+.titulo-collapse {
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    color: #00406b;
+}
+
+.titulo-collapse:hover {
+    color: #F5C000;
+}
+
+.paragrafo-collapse {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
